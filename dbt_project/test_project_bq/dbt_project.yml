@@ -1,0 +1,13 @@
+name: test_project_bq
+profile: 'CTEST1'
+version: '1.0.0'
+config-version: 2
+
+model-paths: ["models"]
+seed-paths: ["seeds"]
+
+clean-targets:
+  - "target"
+  - "dbt_packages"
+  - "logs"
+
