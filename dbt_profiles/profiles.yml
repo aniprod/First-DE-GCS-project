@@ -1,0 +1,13 @@
+CTEST1: # <--- Profile name. This MUST match the value of BIGQUERY_DATASET_ID from main.py
+  target: dev
+
+  outputs:
+    dev:
+      type: bigquery
+      method: service_account # <--- Correct (underscore) and essential for Cloud Run
+      project: "{{ env_var('GCP_PROJECT_ID') }}" # <--- Use environment variable
+      dataset: "{{ env_var('BIGQUERY_DATASET_ID') }}" # <--- Use environment variable
+      threads: 4 # <--- Recommended for parallelism (can be tuned)
+      keyfile: "{{ env_var('GOOGLE_APPLICATION_CREDENTIALS') }}"
+    
+
