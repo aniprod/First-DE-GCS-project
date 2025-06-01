@@ -4,11 +4,11 @@ select
     CustomerID,
     Gender,
     Age,
-    `Annual Income USD`,
-    `Spending Score 1 to 100`,
+    `Annual_Income_USD`,
+    `Spending_Score_1_100`,
     Profession,
-    `Work Experience`,
-    `Family Size`
+    `Work_Experience`,
+    `Family_Size`
 from
     `de-1st-project`.`CTEST1`.`CT`
 where
