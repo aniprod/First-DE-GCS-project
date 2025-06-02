@@ -1,7 +1,7 @@
 # Python-fundamentals
 My first data engineering project!
 
-Step 1: Download a dataset from kaggle
+Step 1: Programatically download a dataset from kaggle via API. Clean up the headers from special characters.
 
 Step 2: Programatically upload it in a GCS bucket
 
